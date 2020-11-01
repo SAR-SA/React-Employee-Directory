@@ -1,7 +1,18 @@
 import logo from './logo.svg';
+import React, {Component} from "react";
 import './App.css';
+import getAllEmployees from './utils/Api';
+import Row from './components/Row'
 
-function App() {
+class App extends Component {
+  //const employees = getAllEmployees()
+  state = {
+    exmployees: getAllEmployees()
+  } 
+
+  render() {
+
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -17,9 +28,12 @@ function App() {
         >
           Learn React
         </a>
+        {this.state.employees.map((employee, index) => {
+          return <>
+        })}
       </header>
     </div>
   );
-}
+}}
 
 export default App;
