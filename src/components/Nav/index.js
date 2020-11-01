@@ -1,12 +1,15 @@
 import React from "react";
+import SearchEmployee from "../SearchEmployee";
 import "./Nav.css";
 
 function Nav() {
     return (
-        <div className="nav">
-            <h1>Employee Directory</h1>
-        </div>
-    )
+        <nav className="navbar">
+            <div className="search-area">
+                <SearchEmployee />
+            </div>
+        </nav>
+    );
 }
 
 export default Nav;
