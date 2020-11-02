@@ -16,13 +16,13 @@ const DataBody = () => {
     }
     return (
         <tbody>
-            {context.developState.filterUsers[0] !== undefined && context.developerState.filteredUsers[0].name !== undefined ? (context.developerState.filteredUsers.map(({ login, name, picture, phone, email, dob }) => {
+            {context.developerState.filteredUsers[0] !== undefined && context.developerState.filteredUsers[0].name !== undefined ? (context.developerState.filteredUsers.map(({ login, name, picture, phone, email, dob }) => {
                 return (
                     <tr key={login.uuid}>
                         <td data-th="Image" className="align-middle">
                             <img
                                 src={picture.medium}
-                                alt={"profile image for " + name.first + "" + name.last}
+                                alt={"profile image for employee named" + name.first + "" + name.last}
                                 className="img-responsive"
                             />
                         </td>
@@ -42,7 +42,7 @@ const DataBody = () => {
                 );
             })
             ) : (
-                    <div></div>
+                    <></>
                 )}
         </tbody>
     );

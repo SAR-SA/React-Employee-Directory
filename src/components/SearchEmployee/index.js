@@ -1,6 +1,6 @@
-import React, { useContext } from "react;"
+import React, { useContext } from "react";
 import "./Search.css";
-import DataContext from "";
+import DataContext from "../../utils/DataContext";
 import { Form } from "react-bootstrap";
 
 const SearchEmployee = () => {
@@ -10,7 +10,7 @@ const SearchEmployee = () => {
         <div className="searchinput">
             <Form.Group classname="form">
                 <Form.Label>Search Employees</Form.Label>
-                <Form.Control type="search" placeholder="Name, Tile, DOB"
+                <Form.Control type="search" placeholder="Name, Phone, Email, DOB"
                     onChange={e => context.handleSearchChange(e)}>
                 </Form.Control>
                 <button className="btn" type="submit">

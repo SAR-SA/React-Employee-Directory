@@ -6,11 +6,11 @@ const DataTable = () => {
     const context = useContext(DataContext);
 
     return (
-        <div className="datatable">
-            <table id="table" className="table">
+        <div className="datatable mt-5">
+            <table id="table" className="table table-striped table-hover table-condensed">
             <thead>
                 <tr>
-                    {context.developState.headings.map(({ name, width }) => {
+                    {context.developerState.headings.map(({ name, width }) => {
                         return (
                             <th
                                 className="col"

@@ -1,21 +1,24 @@
-import logo from './logo.svg';
-import React, {Component} from "react";
+// import logo from './logo.svg';
+import React from "react";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Wrapper from "./components/Wrapper";
 import './App.css';
-import getAllEmployees from './utils/Api';
-import Row from './components/Row';
+// import getAllEmployees from './utils/Api';
+// import Row from './components/Row';
 
 function App() {
   return (
-    <div>
-      <Navbar />
+    <div className="App">
       <Wrapper>
-        
+        <Header />
+        <Main />
       </Wrapper>
     </div>
-  )
+  );
 }
 
-
+export default App;
 
 // class App extends Component {
 //   //const employees = getAllEmployees()
@@ -47,4 +50,4 @@ function App() {
 //   );
 // }}
 
-// export default App;
+

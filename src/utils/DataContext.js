@@ -4,4 +4,4 @@ const DataContext = React.createContext({
 
 });
 
-export default DataContext
+export default DataContext;

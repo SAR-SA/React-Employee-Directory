@@ -1,17 +1,17 @@
 import axios from "axios";
 
-// export default {
-//   getAllEmployees: function() {
-//     return axios.get("https://randomuser.me/api/?results=200&nat=us");
-//   }
-// }
-
-
-function getAllEmployees() {
-  return axios.get("https://randomuser.me/api/?results=200&nat=us");
+export default {
+  getAllEmployees: function() {
+    return axios.get("https://randomuser.me/api/?results=200&nat=us");
+  }
 }
 
-export default getAllEmployees
+
+// function getAllEmployees() {
+//   return axios.get("https://randomuser.me/api/?results=200&nat=us");
+// }
+
+// export default getAllEmployees
 
 
 // Export an object containing methods we'll use for accessing the random user API
