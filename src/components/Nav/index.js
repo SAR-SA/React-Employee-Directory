@@ -4,7 +4,7 @@ import "./Nav.css";
 
 function Nav() {
     return (
-        <nav className="navbar">
+        <nav className="navbar col-6">
             <div className="search-area">
                 <SearchEmployee />
             </div>

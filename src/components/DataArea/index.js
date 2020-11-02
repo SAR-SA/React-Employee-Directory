@@ -3,7 +3,7 @@ import DataTable from "../DataTable";
 import API from "../../utils/API";
 import DataContext from "../../utils/DataContext";
 import Nav from "../Nav";
-import "./DataArea.css";
+
 
 const DataArea = () => {
     const [developerState, setDeveloperState] = useState({
@@ -51,10 +51,11 @@ const DataArea = () => {
     };
 
     const handleSearchChange = event => {
-        const filter = event.target.value;
+        const filter = event.target.value.replace(" ", "");
         const filteredList = developerState.users.filter(item => {
             let values = Object.values(item)
             .join("").toLowerCase();
+            console.log("Values String :", values)
             return values.indexOf(filter.toLowerCase()) !== -1;
         });
 
@@ -63,6 +64,7 @@ const DataArea = () => {
             filteredUsers: filteredList
         });
     };
+
 
     useEffect(() => {
         API.getAllEmployees().then(results => {
@@ -77,6 +79,7 @@ const DataArea = () => {
     return (
         <DataContext.Provider value={{ developerState, handleSearchChange, handleSort }}>
             <Nav />
+
             <div className="data-area">
                 {developerState.filteredUsers.length > 0 ? <DataTable />
                 : <div></div>

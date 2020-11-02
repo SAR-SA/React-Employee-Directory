@@ -7,15 +7,13 @@ const SearchEmployee = () => {
     const context = useContext(DataContext);
 
     return (
-        <div className="searchinput">
+        <div className="searchInput">
             <Form.Group classname="form">
-                <Form.Label>Search Employees</Form.Label>
-                <Form.Control type="search" placeholder="Name, Phone, Email, DOB"
+                <Form.Label id="form-label">Search Employees</Form.Label>
+                <Form.Control type="search" id="form-control" placeholder="Search by: Name, Phone, Email, DOB"
                     onChange={e => context.handleSearchChange(e)}>
                 </Form.Control>
-                <button className="btn" type="submit">
-                    Search
-            </button>
+                
             </Form.Group>
         </div>
     );

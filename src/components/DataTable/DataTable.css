@@ -1,0 +1,13 @@
+thead {
+    background-color: blue;
+    color: white;
+}
+
+
+.col {
+    cursor: pointer;
+}
+
+.note {
+    float: left;
+}

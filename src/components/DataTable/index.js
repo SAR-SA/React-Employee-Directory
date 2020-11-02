@@ -1,12 +1,14 @@
 import React, { useContext } from "react";
 import DataBody from "../DataBody";
 import DataContext from "../../utils/DataContext";
+import "./DataTable.css";
 
 const DataTable = () => {
     const context = useContext(DataContext);
 
     return (
         <div className="datatable mt-5">
+        <h className="note">*Click on <u>Name</u> to sort by alphabetical order</h>
             <table id="table" className="table table-striped table-hover table-condensed">
             <thead>
                 <tr>
@@ -21,7 +23,7 @@ const DataTable = () => {
                                 }}
                             >
                                 {name}
-                                <span className="pointer"></span>
+                                <span className="name"></span>
                             </th>
                         );
                     })}
