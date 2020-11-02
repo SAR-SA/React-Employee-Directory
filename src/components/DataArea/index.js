@@ -74,6 +74,7 @@ const DataArea = () => {
                 filteredUsers: results.data.results
             });
         });
+        // eslint-disable-next-line
     }, []);
 
     return (
