@@ -2,7 +2,7 @@
   "name": "employee_directory",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://SAR-SA.github.io/React-Employee-Directory",
+  "homepage": "https://sar-sa.github.io/React-Employee-Directory/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
