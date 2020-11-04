@@ -5,9 +5,7 @@
 - [Description](#descriptiongo)
 - [Installation Instructions](#installgo)
 - [Usage](#usagego)
-- [How to Contribute](#contrigo)
 - [Authors](#authorgo)
-- [How to Run Tests](#testsgo)
 - [Deployed Links](#deployedgo)
 - [Questions](#contactgo)
         
@@ -24,13 +22,11 @@ A user can view an entire employee directory at once so that they have quick acc
 ## License<a id="licensego"></a>
 
 MIT License
-## Contribution Guidelines<a id="contrigo"></a>
 
 
 ## Authors<a id="authorgo"></a>
 
 Shawn A. Rather
-## Tests<a id="testsgo"></a>
 
 
 ## Deployed<a id="deployedgo"></a>
